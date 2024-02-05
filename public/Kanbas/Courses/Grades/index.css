@@ -1,0 +1,12 @@
+.table tbody tr th {
+    color: red;
+    text-align: left;
+}
+.table tbody tr td {
+    text-align: center;
+}
+.table tbody tr td input {
+    text-align: center;
+}
+
+

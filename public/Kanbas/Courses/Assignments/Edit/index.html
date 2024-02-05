@@ -1,61 +1,122 @@
 <html>
-    <head></head>
+    <head>
+        <link rel="stylesheet" href="/Kanbas/styles.css" />
+        <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+        <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" /> <!--version 4.7-->
+        <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" /> <!--Borrow the same format in the home screen course modules-->
+        <link rel="stylesheet" href="/Kanbas/Courses/Home/Navbar/topnavbar.css" /><!--Enable the resposive design with mini nav bar in this screen-->
+        <link rel="stylesheet" href="/Kanbas/Courses/Assignments/Edit/index.css" />
+    </head>
+
     <body>
+        
         <form action="/Kanbas/Courses/Assignments/screen.html">
-        <select>
-            <option selected value ="SPEEDGRADER">Speed Grader</option>
-        </select>
-        <hr>
-
-        <h3>Assignment Name</h3>
-       
-
-            <input value="A1-ENV + HTML"> <br />
-            
+            <div class="wd-cl-editass-custom-header align-items-center">
+                <i class="fa fa-check-circle text-success pe-1"></i>
+                <span class="pe-2">Published</span>
+                <button type="button" class="btn btn-primary"><i class="fa fa-ellipsis-v ms-2"></i></button>
+            </div>
+    
+            <hr />
+            <div class="mb-3">
+                <label for="wd-ae-assignment-name" class="form-label">Assignment Name</label>
+                <input type="text" class="form-control w-50" id="wd-ae-assignment-name" placeholder="A1 - ENV + HTML">
+            </div>
+            <div class="mb-3">
+                <label for="wd-ae-assignment-description" class="form-label">Example textarea</label>
+                <textarea class="form-control w-50" id="wd-ae-assignment-description" rows="3">This assignment describes how to install the development environment for creating and working with Web applications we will developing this semester. We will add new content every week and pushingthe code to a GitHub repo and depoly to a remote server hosted on Netlify.
+                    </textarea>
+            </div>
+    
+            <div class="row g-3 align-items-center">
+                <div class="col-2">
+                    <label for="wd-ae-assignment-point" class="col-form-label ms-5">Points</label>
+                </div>
+                <div class="col-4">
+                    <input type="text" class="form-control" id="wd-ae-assignment-point" placeholder="100">
+                </div>
+            </div>
+            <br />
+            <div class="row g-3 align-items-center">
+                <div class="col-2">
+                    <label for="wd-ae-assignment-group" class="col-form-label ms-5">Assignment
+                        Group</label>
+                </div>
+                <div class="col-4">
+                    <select id="wd-ae-assignment-group" class="form-select">
+                        <option selected>Assignments</option>
+                    </select>
+                </div>
+            </div>
+            <br />
+            <div class="row g-3 align-items-center">
+                <div class="col-2">
+                    <label for="wd-ae-assignment-gradedisplay" class="col-form-label ms-5">Display
+                        Grade as</label>
+                </div>
+                <div class="col-4">
+                    <select id="wd-ae-assignment-gradedisplay" class="form-select">
+                        <option selected>Percentage</option>
+                    </select>
+                </div>
+            </div>
             <br>
-            <textarea id="description">This is the assignmnent description.</textarea> <br />
-            <br>
-            <label for ="points">Points</label><br />
-            <input id ="points" value="100"> <br />
-            <br>
-            <label for ="assignment-group">Assignment Group</label><br />
-            <select id="assignment-group">
-                <option selected value ="ASSIGNMENTS">ASSIGNMENTS</option>
-            </select><br />
-            <br>
-            <label for="display-grade-as">Display Grade as</label><br />
-            <select id="display-grade-as">
-                <option selected value="PERCENTAGE">Percentage</option>
-            </select><br />
-            <br>
-            <label for="submission-type">Submission Type</label><br />
-            <select id="submission-type">
-                <option selected value="ONLINE">Online</option>
-            </select><br />
-            <br>
-            <label>Online Entry Options</label><br />
-            <input type="checkbox" name = "wd-entry" value ="text" >Text Entry<br />
-            <input type="checkbox" name = "wd-entry" value ="website">Website URL<br />
-            <input type="checkbox" name = "wd-entry" value ="media">Media Recordings<br />
-            <input type="checkbox" name = "wd-entry" value ="student">Student Annotation<br />
-            <input type="checkbox" name = "wd-entry" value ="file">File Uploads<br />
-            <br>
-            <label>Assign</label><br />
-            <label for="assign-to">Assign to</label><br />
-            <input id="assign-to" value="Everyone"><br />
-            <br>
-            <label for="due">Due</label><br />
-            <input id="due" type="date" value="2021-01-01"><br />
-            <br>
-            <label for="available-from">Available from</label><br />
-            <input id="available-from" type="date" value="2021-01-01"><br />
-            <br>
-            <label for="until">Until</label><br />
-            <input id="until" type="date" value="2021-01-01"><br />
-            <br>
-            <button type ="submit">Cancel</button></a>
-            <button type = "submit">Save</button></a>
+            <div class="row mb-3">
+                <div class="col-sm-10 offset-sm-2">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="wd-ae-assignment-checkbox" />
+                        <label class="form-check-label" for="wd-ae-assignment-checkbox">
+                            Do not count this assignment towards the final grade</label>
+                    </div>
+                </div>
+            </div>
+    
+            Assign
+            <div class="card mt-1 ps-2 pt-2 ms-5 wd-cl-editass-custom-card">
+                <div>
+                    <label for="wd-ae-assignment-assignto" class="form-label">Assign to</label>
+                    <input type="text" class="form-control w-50" id="wd-ae-assignment-assignto" placeholder="Everyone">
+                </div>
+                <br>
+                <div>
+                    <label for="wd-ae-assignment-duedate" class="form-label">Due</label><br />
+                    <input id="wd-ae-assignment-duedate" class="form-control w-50" type="date" value="2021-01-01">
+                </div>
+                <br>
+                <div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="available-from" class="form-label">Available from</label><br />
+                            <input class="form-control w-50" id="available-from" type="date" value="2021-01-01"><br />
+                        </div>
+                        <div class="col-6">
+                            <label for="until" class="form-label">Until</label><br />
+                            <input class="form-control w-50" id="until" type="date" value="2021-01-01"><br />
+                        </div>
+                    </div>
+                    <div  class="row ps-1 wd-cl-editass-custom-button">
+                        <button type="button" class="btn btn-info"> + Add </button>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="wd-ae-assignment-checkbox2" />
+                        <label class="form-check-label" for="wd-ae-assignment-checkbox2">
+                            Notify users that this content has changed</label>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <button type="submit" class="btn btn-info">Cancel</button></a>
+                    <button type="submit" class="btn btn-danger">Save</button></a>
+                </div>
+            </div>
         </form>
+
     </body>
 </html>
 

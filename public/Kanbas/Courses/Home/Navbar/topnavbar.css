@@ -1,0 +1,51 @@
+.wd-topnavbar {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wd-topnavbar i {
+    color: white;
+}
+
+.wd-mininav {
+    background-color: white;
+    list-style: none;
+}
+
+.wd-mininav li {
+    padding: 5px;
+    margin-bottom: 5px;
+    font-size: 0.8em;
+}
+
+.wd-mininav a {
+    color: red;
+    text-decoration: none;
+}
+
+.wd-minicnav {
+    background-color: white;
+    list-style: none;
+    padding: 0px;
+    width: 125px;
+    margin: 0px;
+    margin-left: 20px;
+}
+
+.wd-minicnav li {
+    padding-left: 1px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    color: red;
+}
+
+.wd-minicnav a {
+    color: red;
+    text-decoration: none;
+}

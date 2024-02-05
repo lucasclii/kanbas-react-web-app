@@ -1,32 +1,47 @@
 <html>
-    <head></head>
+    <head>
+        <link rel="stylesheet" href="/Kanbas/styles.css" />
+        <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+        <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" /> <!--version 4.7-->
+        <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    </head>
     <body>
         <table>
             <tbody>
                 <tr valign="top">
                     <td>
-                        <ul>
-                            <li><a href="/Kanbas/Account/Navigation/index.html">Account</a></li>
+                        <!--Navigation sidebar palce-->
+                        <ul class="wd-kanbas-navigation">
+                            <li><a href="http://northeastern.edu">
+                                <b style="color: red;font-size: xxx-large;">N</b></a></li>
+                
+                            <li><a href="/Kanbas/Account/Profile/screen.html">
+                                <i class="fa fa-user-circle-o" aria-hidden="true"></i>Account</a></li>
+                
                             <li>
-                                <a href="/Kanbas/Dashboard/screen.html">Dashboard</a>
+                                <a href="/Kanbas/Dashboard/screen.html">
+                                    <i class="fa fa-tachometer"></i>Dashboard</a>
+                            </li>
+                            <li class="wd-active">
+                                <a href="/Kanbas/Courses/Home/screen.html">
+                                    <i class="fa fa-book" aria-hidden="true"></i>Courses</a>
                             </li>
                             <li>
-                                <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
+                                <a href="#"><i class="fa fa-calendar"></i>
+                                    Calendar</a>
                             </li>
-                            <li>
-                                <a href="/Kanbas/Calendar/index.html">Calendar</a>
-                            </li>
-                            <li><a href="/Kanbas/Inbox/index.html">Inbox</a></li>
-                            <li><a href="#">History</a></li>
-                            <li><a href="#">Studio</a></li>
-                            <li><a href="#">Commons</a></li>
-                            <li><a href="#">Help</a></li>
+                            <li><a href="#"><i class="fa fa-inbox" aria-hidden="true"></i>Inbox</a></li>
+                            <li><a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i>History</a></li>
+                            <li><a href="#"><i class="fa fa-video-camera" aria-hidden="true"></i>Studio</a></li>
+                            <li><a href="#"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>Commons</a></li>
+                            <li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i>Help</a></li>
+                            <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
                         </ul>
                     </td>
                     <td>
-                        <ul>
+                        <ul class="wd-navigation">
                             <li>
-                                    <a href="/Kanbas/Courses/Home/screen.html">
+                                <a href="/Kanbas/Courses/Home/screen.html">
                                     Home</a>
                             </li>
                             <li><a href="/Kanbas/Courses/Modules/screen.html">
@@ -49,7 +64,7 @@
                             <li><a href="#">Outcomes</a></li>
                             <li><a href="#">Collaborations</a></li>
                             <li><a href="#">Syllabus</a></li>
-                            <li><a href="/Kanbas/Courses/Settings/Course Details/screen.html">Settings</a></li>
+                            <li class="wd-active"><a href="/Kanbas/Courses/Settings/Course Details/screen.html">Settings</a></li>
                         </ul>
                     </td>
                     <td>

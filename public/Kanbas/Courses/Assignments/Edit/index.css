@@ -1,0 +1,14 @@
+
+.wd-cl-editass-custom-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color:green
+}
+
+.wd-cl-editass-custom-card {
+    width: 700px;
+}
+.wd-cl-editass-custom-button {
+    width: 702px;
+}
