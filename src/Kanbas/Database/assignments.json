@@ -1,0 +1,19 @@
+[
+    { "_id": "A101", "title": "A1 - ENV + HTML", "due": "Due at Sep 18", "point":"100 pts", "course": "RS101" },
+    { "_id": "A102", "title": "A2 - CSS + BOOTSTRAP", "due": "Due at Oct 2", "point":"100 pts", "course": "RS101" },
+    { "_id": "A103", "title": "A3 - JS + REACT", "due": "Due at Oct 16", "point":"100 pts","course": "RS101" },
+    { "_id": "A104", "title": "A4 - STATE + REDUX", "due": "Due at Oct 30", "point":"100 pts","course": "RS101" },
+    { "_id": "A201", "title": "A1 - Array", "due": "Due at Sep 18", "point":"100 pts", "course": "RS102" },
+    { "_id": "A202", "title": "A2 - List", "due": "Due at Sep 28", "point":"100 pts", "course": "RS102" },
+    { "_id": "A203", "title": "A3 - Loops", "due": "Due at Oct 12", "point":"100 pts", "course": "RS102" },
+    { "_id": "A204", "title": "A4 - Functions", "due": "Due at Oct 30", "point":"100 pts","course": "RS102" },
+    { "_id": "A301", "title": "Homework 1", "due": "Due at Sep 18", "point":"100 pts", "course": "RS103" },
+    { "_id": "A302", "title": "Homework 2", "due": "Due at Oct 1", "point":"100 pts","course": "RS103" },
+    { "_id": "A303", "title": "Homework 3", "due": "Due at Oct 15", "point":"100 pts", "course": "RS103" },
+    { "_id": "A304", "title": "Homework 4", "due": "Due at Oct 30", "point":"100 pts", "course": "RS103" },
+    { "_id": "A401", "title": "Homework 1", "due": "Due at Sep 18", "point":"100 pts","course": "RS104" },
+    { "_id": "A402", "title": "Homework 2", "due": "Due at Sep 30", "point":"100 pts", "course": "RS104" },
+    { "_id": "A403", "title": "Homework 3", "due": "Due at Oct 15", "point":"100 pts", "course": "RS104" },
+    { "_id": "A404", "title": "Homework 4", "due": "Due at Oct 30", "point":"100 pts", "course": "RS104" }
+    
+]

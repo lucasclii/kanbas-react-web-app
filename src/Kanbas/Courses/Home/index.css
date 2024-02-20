@@ -1,0 +1,20 @@
+.todo {
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    color: red;
+    text-align: left;
+}
+
+.fatimes {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: grey;
+}
+
+.smalltext {
+    text-align: center;
+    font-size: x-small;
+    color: gray;
+}
