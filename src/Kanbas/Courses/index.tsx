@@ -7,9 +7,11 @@ import Home from "./Home";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/Editor";
 import Grades from "./Grades";
-//personal changes: color & font size & show course number + course name
+import "./screenstyle.css";
+import { FaBars, FaAngleDown } from "react-icons/fa";
 
-function Courses() {
+
+function Courses({ courses }: { courses: any[]; }) {
     const { courseId } = useParams();
     const course = courses.find((course) => course._id === courseId);
 
@@ -17,17 +19,26 @@ function Courses() {
     const path = location.pathname.split("/");
     const currentPage = path[path.length - 1];
     const title = `${course?.number} ${course?.name} > ${currentPage}`;
+ 
+    const courseName = course?.name || "Course Name"; 
 
     return (
         <div>
-            <h1 style={{ color: "red", fontSize: "x-large", marginLeft:"20px", marginTop:"5px"}}> <HiMiniBars3 /> {title} </h1>
-            <hr />
-            <h6 style={{marginLeft:"20px"}}> <i>{course?.term}_{course?.number}... </i></h6>
-            <CourseNavigation />
-            <div>
+            <div className="d-block d-md-none wd-topnavbar d-flex justify-content-between align-items-center">
+                <FaBars style={{ color: 'white' }}/>
+                {courseName}
+                <FaAngleDown className="m-2" style={{ color: 'white' }} />
+            </div>
+
+            <div className="d-none d-md-block">
+                <h1 style={{ color: "red", fontSize: "x-large", marginLeft:"20px", marginTop:"5px"}}> <HiMiniBars3 /> {title} </h1>
+                <hr />
+                <h6 style={{marginLeft:"20px"}}> <i>{course?.startDate}_{course?.number}... </i></h6>
+                <CourseNavigation />
+            </div>
+            <div className="d-flex">
                 <div
-                    className="overflow-y-scroll position-fixed bottom-0 end-0"
-                    style={{ left: "320px", top: "50px" }} >
+                    className= "main-content">
                     <Routes>
                         <Route path="/" element={<Navigate to="Home" />} />
                         <Route path="Home" element={<Home/>} />

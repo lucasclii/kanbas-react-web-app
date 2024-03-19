@@ -1,18 +1,16 @@
 [
     {
         "_id": "RS101",
-        "name": "Web Development",
+        "name": "Web Develop",
         "number": "CS4550",
-        "term": "2024_sp",
         "startDate": "2023-01-10",
         "endDate": "2023-05-15",
         "image": "webdev.jpg"
     },
     {
         "_id": "RS102",
-        "name": "Intensive Foundations",
+        "name": "Python Fndn",
         "number": "CS4560",
-        "term": "2024_sp",
         "startDate": "2023-01-10",
         "endDate": "2023-05-15",
         "image": "pycourse.jpg"
@@ -21,16 +19,14 @@
         "_id": "RS103",
         "name": "OOD in Java",
         "number": "CS4570",
-        "term": "2024_sp",
         "startDate": "2023-01-10",
         "endDate": "2023-05-15",
         "image": "java.jpg"
     },
     {
         "_id": "RS104",
-        "name": "Data Str, Algo & App",
+        "name": "Data Str & Algo",
         "number": "CS4580",
-        "term": "2024_sp",
         "startDate": "2023-01-10",
         "endDate": "2023-05-15",
         "image": "algo.jpg"

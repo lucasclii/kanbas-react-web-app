@@ -4,7 +4,7 @@ import { FaFileImport, FaBullseye, FaChartBar , FaBullhorn, FaBell, FaDotCircle,
 
 function StatusList() {
   return (
-    <div className='m-2'>
+    <div className='flex-grow-0 m-2 d-none d-lg-block'>
       <ul className="list-group">
         <li className="list-group-item"><FaFileImport aria-hidden="true" /> Import Existing Content</li>
         <li className="list-group-item"><FaFileImport aria-hidden="true" /> Import From Commons</li>
